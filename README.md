@@ -1,9 +1,24 @@
 # CSE440-section-01--TIC-TAC-TOE-GAME-
 Console-based Tic-Tac-Toe game. Single-player (vs AI) and two-player modes.
 
-Here’s what you can write for **Project Features** (report, presentation, or README):
+Course: CSE 440 — Artificial Intelligence
+Group: 01 | Section: 02
+Institution: North South University
+Semester: Summer 2026
 
----
+# Group Members
+         NAME                 NSU ID
+1.Mehedi Ashraf Simanto      2112085042
+2.Md. Mazharul Islam Masum   2233562042
+3.Mst.Fahmida Akter          2121534642
+4.Abdur Rahman               2131641042
+
+
+# Overview
+This project is a console-based Tic-Tac-Toe game developed in Python. It allows users to play in two different modes: single-player mode against a rule-based AI and two-player mode for local play with a friend. The game uses a clean text-based 3x3 board interface where players choose positions using numbers 1 to 9.
+The system includes input validation to prevent invalid or duplicate moves, automatic turn management between players, and game-end detection after every move. In single-player mode, the AI follows a dynamic strategy: it tries to win when possible, blocks the player’s winning move, takes the center if available, and otherwise selects a random valid position.
+Overall, the project demonstrates core programming concepts such as modular design, condition handling, loops, user interaction, and simple decision-based AI in an interactive terminal application.
+
 
 # Project Features
 
@@ -42,9 +57,17 @@ Here’s what you can write for **Project Features** (report, presentation, or R
 - Rejects numbers outside the range 1–9.
 - Rejects moves on cells that are already occupied.
 
-7. Project Structure 
-- `main.py` — entry point to run the game  
-- `support/` — supporting modules (board, menu, player, AI, game logic)  
-- `data/` — folder for datasets (not used in this project)  
-- `others/` — presentations, reports, and demo video  
-- `requirements.txt` — lists project dependencies (Python standard library only)  
+# Project Structure 
+tic_tac_toe/
+├── main.py                 # Main entry point
+├── README.md               # Project documentation
+├── requirements.txt        # Project dependencies
+├── data/                   # Dataset folder (if needed)
+├── support/                # Supporting source files
+│   ├── ai.py               # AI move logic
+│   ├── board.py            # Board display and win checks
+│   ├── constants.py        # Winning line definitions
+│   ├── game.py             # Main game loop
+│   ├── menu.py             # Menu and mode selection
+│   └── player.py           # Player input handling
+└── others/                 # Reports, presentation, demo video  
